@@ -2,3 +2,4 @@
 This is a fully functioning hour system. 
 Your database(MYSLQ) should kind look like this;
 
+![Database Layout](image.png)
