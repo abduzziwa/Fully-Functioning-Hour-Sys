@@ -1,0 +1,160 @@
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dashh2 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.cbody {
+    margin-top: 4rem;
+    margin-left: -4rem;
+    font-size: x-large;
+}
+
+.donut-chart-grid {
+    display: grid;
+    grid-template-columns:auto auto;
+}
+
+.donut-chart-container {
+    margin: 5rem;
+}
+
+.EmpTable{
+    width: 60vw;
+    margin-left: 28rem;
+    margin-top: 6rem;
+}
+
+.full {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+}
+
+.pro {
+    margin-left: -50rem;
+}
+.avatar-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.avatar-card img {
+    width: 100%;
+    height: auto;
+}
+
+.details-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.donut-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.donut-cards > * {
+    flex: 1 1 300px; /* Each donut card will take 300px width */
+    margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .avatar-card,
+    .details-card,
+    .donut-cards > * {
+        max-width: 100%;
+    }
+}
+
+.profile-content {
+    width: 65%;
+    margin-left: 29%;
+    height: 80%;
+    margin-top: 2rem;
+    /* outline: 1px solid #000; */
+    animation: cubic-bezier(1, 0, 0, 1) 3s;
+    transition: all 3s ease-in-out;
+    max-width: 100%; /* Set a maximum width */
+    overflow-x: hidden;
+    max-height: 100%; /* Set a maximum width */
+    overflow-y: hidden;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+
+}
+
+.profile-content > .card1 > .card-body > img {
+    width: 20rem;
+    height: 18rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.profile-content > .card2 > .card-body {
+    padding: 15px;
+    margin-top: 5rem;
+    margin-left: -300%;
+
+    
+}
+
+.dons {
+    margin-top: 7%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    padding-top: .5rem;
+    cursor: pointer;
+} 
+
+.don2 .don3 {
+    margin-left: -20px;
+}
+
+.key {
+    font-weight: bold;
+}
+
+@media (min-width: 1020px) {
+    .profile-content {
+        margin-left: 25%; /* Adjusted for large screens */
+    }
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .profile-content {
+        margin-left: 20%; /* Adjusted for medium screens */
+    }
+}
+
+/* Small screens (phones, 600px and down) */
+@media (max-width: 767px) {
+    .profile-content {
+        margin-left: 10%; /* Adjusted for small screens */
+    }
+}
+
+/* Extra small screens (very small devices, 480px and down) */
+@media (max-width: 479px) {
+    .profile-content {
+        margin-left: 5%; /* Adjusted for extra small screens */
+    }
+}
