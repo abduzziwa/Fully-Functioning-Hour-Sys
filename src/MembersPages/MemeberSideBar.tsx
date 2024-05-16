@@ -1,34 +1,37 @@
-import "../components/component styles/Sidebar.css"; // Import CSS file for styling
+import "../components/component styles/Sidebar.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const MemeberSideBar = () => {
   return (
-    <div className="card side style">
-      <div className="card-body">
-        <h5 className="card-title">
-          <span className="admin">
-            <a href="/Dashboard">Admin</a>
-          </span>
-        </h5>
-        <div className="links">
-          <a href="/member">
-            <span className="icon">
-              <span className="text">Dashboard</span>
-            </span>
+    <div className="sidebar">
+      <div className="logo"></div>
+      <ul className="menu">
+        <li className="active">
+          <a href="/Member">
+            <i className="far fa-user"></i>
+            <span>Medewerker</span>
           </a>
+        </li>
+
+        <li>
+          <a href="/Member">
+            <i className="far fa-user"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
           <a href="/membertime">
-            <span className="icon">
-              {/* <RiRegisteredFill /> */}
-              <span className="text">Registreer de tijd</span>
-            </span>
+            <i className="fas fa-user-md"></i>
+            <span>Registeer de Tijd</span>
           </a>
+        </li>
+        <li className="logout">
           <a href="/">
-            <span className="icon">
-              {/* <BiLogOut /> */}
-              <span className="text">Afmelden</span>
-            </span>
+            <i className="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };

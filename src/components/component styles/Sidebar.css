@@ -1,75 +1,82 @@
-.side{
-    background: #00365e !important;
-    color: aliceblue;
-    max-height: 50rem;
-    margin-left: 2rem;
-    width: 18rem;
-    margin-top: 3rem;
-    margin-right: 1.5rem;
-    padding-top: 4rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  animation: normal;
 }
 
-.time{
-    height: 100vh;
-    max-height: 100%;
-    outline: none;
+.body {
+  display: flex;
 }
 
-
-.admin a {
-    color: white;
-    font-size: 2.3rem;
-    padding-left: 2rem;
-    margin-top: 2rem;
-    font-weight: bold;
-    text-decoration: none;
+.sidebar {
+  margin-right: 2rem;
+  position: sticky;
+  scroll-behavior: none !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: rgb(229, 74, 148);
 }
 
-.admin:hover{
-    color: #f31b84;
-    cursor: pointer;
-}
-.card.side {
-    transition: width 0.3s ease; /* Transition the width of the sidebar */
-}
+/* .sidebar:hover {
+  width: 340px;
+  transition: 0.5s;
+} */
 
-.links .icon {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+.logo {
+  height: 80px;
+  padding: 16px;
 }
 
-.links .icon svg {
-    width: 28px; /* Initial size of the icons */
-    height: 30px;
-    margin-right: 10px;
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
 }
 
-.links .icon span.text {
-    transition: opacity 0.3s ease; /* Transition the opacity of the text */
+.menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in;
 }
 
-@media (max-width: 760px) {
-    .side {
-        width: 10rem !important; /* Adjusted width for smaller screens */
-    }
-
-    .links .icon {
-        margin-bottom: 0.5rem;
-       
-        size: 40px !important;
-        padding-left: 5px;
-    }
-
-    .links .icon span.text {
-        opacity: 0; /* Set opacity to 0 to hide the text */
-    }
-
-    .links .icon svg {
-        width: 24px; /* Icons remain at their normal size */
-        height: 24px;
-    }
+.menu li:hover,
+.active {
+  background: #e0e0e058;
 }
 
+.menu a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1.2rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

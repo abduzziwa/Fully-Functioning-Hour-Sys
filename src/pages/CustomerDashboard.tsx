@@ -50,7 +50,7 @@ const CustomerDashboard = () => {
         <div className="card dash">
           <div className="card-body">
             <h5 className="card-title dash-title">
-              CustomerDashboard <span>Groep A4</span>
+              klanten Dashboard <span>Groep A4</span>
             </h5>
             <div>
               <h2 className="welcome">Welcome {name} </h2>

@@ -62,7 +62,7 @@ const TableUsers = () => {
           <table className="table table-striped table-hover custom-table">
             <thead className="thead-dark">
               <tr>
-                <th scope="col">Medewekwer ID</th>
+                <th scope="col">Medewerker ID</th>
                 <th scope="col">Naam</th>
                 <th scope="col">Functie</th>
                 <th scope="col">Werkmail</th>

@@ -1,5 +1,5 @@
 import "./component styles/Sidebar.css";
-
+import "@fortawesome/fontawesome-free/css/all.css";
 const Sidebar = () => {
   const handleLogout = () => {
     const key = localStorage.getItem("sessionId");
@@ -25,46 +25,46 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="card side style">
-      <div className="card-body">
-        <h5 className="card-title">
-          <span className="admin">
-            <a href="/Dashboard">Admin</a>
-          </span>
-        </h5>
-        <div className="links">
+    <div className="sidebar">
+      <div className="logo"></div>
+      <ul className="menu">
+        <li className="active">
           <a href="/Charts">
-            <span className="icon">
-              {/* <BiSolidDashboard /> */}
-              <span className="text">Dashboard</span>
-            </span>
+            <h3>Admin</h3>
           </a>
-          <a href="/Dashboard">
-            <span className="icon">
-              {/* <BiSolidDashboard /> */}
-              <span className="text">Medewerkers</span>
-            </span>
+        </li>
+
+        <li>
+          <a href="/Charts">
+            <i className="far fa-user"></i>
+            <span>Dashboard</span>
           </a>
+        </li>
+        <li>
+          <a href="/dashboard">
+            <i className="fas fa-user-md"></i>
+            <span>Medewerkers</span>
+          </a>
+        </li>
+        <li>
           <a href="/Customers">
-            <span className="icon">
-              {/* <BiSolidDashboard /> */}
-              <span className="text">Klanten</span>
-            </span>
+            <i className="fas fa-shopping-bag"></i>
+            <span>Klanten</span>
           </a>
-          <a href="/WorkedHours">
-            <span className="icon">
-              {/* <IoIosPersonAdd /> */}
-              <span className="text">Medewerker Uren</span>
-            </span>
+        </li>
+        <li>
+          <a href="/Workedhours">
+            <i className="fas fa-briefcase"></i>
+            <span>Medewerker Uren</span>
           </a>
-          <a href="/" onClick={handleLogout}>
-            <span className="icon">
-              {/* <BiLogOut /> */}
-              <span className="text">Afmelden</span>
-            </span>
+        </li>
+        <li className="logout">
+          <a href="/">
+            <i className="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };
