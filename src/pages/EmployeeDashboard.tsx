@@ -49,7 +49,7 @@ const Dashboard = () => {
         <div className="card dash">
           <div className="card-body">
             <h5 className="card-title dash-title">
-              Dashboard <span>Groep A4</span>
+              Gilde DevOps
             </h5>
             <div>
               <h2 className="welcome">Welcome {name} </h2>
